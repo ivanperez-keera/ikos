@@ -103,8 +103,8 @@ include_directories(${AR_INCLUDE_DIR})
 find_package(LLVM REQUIRED)
 include_directories(SYSTEM ${LLVM_INCLUDE_DIR})
 
-if ((LLVM_VERSION VERSION_LESS "14") OR (NOT (LLVM_VERSION VERSION_LESS "15")))
-  message(FATAL_ERROR "LLVM 14 is required.")
+if ((LLVM_VERSION VERSION_LESS "16") OR (NOT (LLVM_VERSION VERSION_LESS "17")))
+  message(FATAL_ERROR "LLVM 16 is required.")
 endif()
 
 # Add path to llvm cmake modules
